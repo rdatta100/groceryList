@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Grocery List</title>
+		<link rel = "stylesheet" href = "style.css" />
+		<script src="utilities.js"></script>
+	</head>
+
+	<body onload = "initialize();">
+	
+	<img src = "logo.png">
+	
+	<hr />
+	
+	<div>
+		<h3>Grocery List</h3>
+		
+		<input id = "grocery" type = "text" placeholder = "Please enter an item...">
+		
+		<button onclick = "addGroceryItem();">Add</button>
+		
+		<h6>Would you like to alter the order of your list?</h6> 
+		<input id = "first" type = "text" placeholder = "1"> &#8594 <input id = "second" type = "text" placeholder = "3"> 
+		<button onclick = "changeList();">Change</button>
+		
+		<h6>Would you like to delete something from your list?</h6> 
+		<input id = "deleteThis" type = "text" placeholder = "item #">
+		<button onclick = "deleteGroceryItem();">Delete</button>
+		
+		<ul id = "groceryList">
+		</ul>
+	</div>
+	</body>
+</html>
